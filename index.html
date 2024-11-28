@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      
+      @media screen and (orientation: landscape) {
+        body {
+          background-color: aqua;
+        }
+
+        .div1 {
+          border: 5px solid red;
+          padding: 20px;
+          background-color: yellow;
+        }
+      }
+      .div1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      @media screen and (orientation: portrait) {
+        body {
+          background-color: orange;
+        }
+        .div1 {
+          border: 5px solid blue;
+          padding: 25px;
+          background-color: rgb(199, 221, 196);
+        }
+      }
+
+      @media screen and (min-width: 0px) and (max-width: 425px) {
+        .div1 {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .p {
+        background-color: rgb(230, 212, 203);
+      }
+      .div1 div {
+        border: 2px solid rgb(183, 71, 151);
+      }
+      .cd {
+        width: 203px;
+        height: 314px;
+      }
+      ::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div class="cd">
+        <div>
+          <img class="ab" src="./abdul kalam - Copy.png" alt="" />
+        </div>
+        <div style="height: 50px; overflow-y: scroll">
+          <p>
+            A.P.J. Abdul Kalam (born October 15, 1931, Rameswaram, India—died
+            July 27, 2015, Shillong) was an Indian scientist and politician who
+            played a leading role in the development of India ’s missile and
+            nuclear weapons programs. He was president of India from 2002 to
+            2007
+          </p>
+        </div>
+        <div class="p">
+          <p>Abdul kalam</p>
+        </div>
+      </div>
+
+      <div class="cd">
+        <div>
+          <img class="am" src="./ambedkar.jpg" alt="" />
+        </div>
+        <div style="height: 50px; overflow-y: scroll">
+          <p>
+            Dr BR Ambedkar was born on April 14, 1891, in Mhow, Madhya Pradesh,
+            into a Dalit Mahar family, which faced severe social discrimination
+            due to the rigid caste system of that time. His father, Ramji Maloji
+            Sakpal, served in the British Indian Army, while his mother,
+            Bhimabai, was a homemaker.
+          </p>
+        </div>
+        <div class="p"><p>Ambedkar</p></div>
+      </div>
+
+      <div class="cd">
+        <div>
+          <img class="de" src="./devara.jpg" alt="" />
+        </div>
+        <div style="height: 50px;overflow-y: scroll;">
+          <p>
+            May 28, 1923: N.T. Rama Rao is born in Nimmakaru, a village in
+            A.P.’s Krishna district to a farming couple, Nandamuri Lakshmaih and
+            Venkata Ramamma. May 1943: NTR marries Basava Tarakam. 1949: NTR
+            makes his film debut in Mana Desam (Our nation) March 29, 1982: NTR
+            launches Telugu Desam Party
+          </p>
+        </div>
+        <div class="p"><p>Ntr</p></div>
+      </div>
+    </div>
+  </body>
+</html>
